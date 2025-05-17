@@ -51,7 +51,7 @@
     }
     .map
     {
-        flex: 1;
+      flex: 1;
       color: #333;
       text-align: center;
       padding: 10px 15px;
@@ -61,10 +61,106 @@
       margin-left: 5px;
       border: none; 
       outline: none; 
+      border-radius: 5px;
+      color-scheme: #0D3B66, #8D99AE;
     }
+
     .Bodytwo
     {
         text-align: center;
+    }
+      .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .cards-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: calc(33% - 20px);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin: 0 0 10px;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 12px;
+      color: #666;
+      line-height: 1.5;
+    }
+    .Header2{
+      text-align: center;
+      background-color: #8D99AE;
+      
+    }
+    .activities-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      background-color: #8D99AE;
+      padding-top: 20px;
+    }
+
+    .activity {
+      text-align: center;
+    }
+
+    .activity img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .activity h3 {
+      font-size: 18px;
+      margin: 0 0 5px;
+      color: #333;
+    }
+
+    .activity p {
+      font-size: 14px;
+      color: #666;
     }
   </style>
 
@@ -83,9 +179,9 @@
     </div>
   </div>
   <div class="Body">
-    <h1>Join us in illuminating <br> communities without <br>
+    <h1 style="color: white;">Join us in illuminating <br> communities without <br>
          electricity in the Philippines</h1> <br>
-         <p>Be part of the movement towards a brighter future.</p> <br>
+         <p style="color: white;">Be part of the movement towards a brighter future.</p> <br>
          <a href="#interactive Map" class="map"> Explore Map</a>
   </div>
   <br><br>
@@ -95,8 +191,78 @@
     </h1>
     <p>Learn More About the Impact of Your Donation</p>
     <br>
-    
+    <br>
+    <br>
   </div>
+    <div class="cards-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="https://imgs.search.brave.com/fMnr7X32ZQQisd-Z7jsAv3rHsMvhMQp-Uj9W7naalmk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzE0LzMwLzI0Lzg2/LzM2MF9GXzE0MzAy/NDg2MDNfN2Y5R0dI/dDNwd0luSXV6WTBK/QzlVMnowc0JDRzA2/a1EuanBn" alt="Education Programs">
+        <h2>Education Programs</h2>
+        <p>Your donations help fund educational initiatives for...</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="https://imgs.search.brave.com/fMnr7X32ZQQisd-Z7jsAv3rHsMvhMQp-Uj9W7naalmk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzE0LzMwLzI0Lzg2/LzM2MF9GXzE0MzAy/NDg2MDNfN2Y5R0dI/dDNwd0luSXV6WTBK/QzlVMnowc0JDRzA2/a1EuanBn" alt="Community Development">
+        <h2>Community Development</h2>
+        <p>Support our efforts in building sustainable com...</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="https://imgs.search.brave.com/fMnr7X32ZQQisd-Z7jsAv3rHsMvhMQp-Uj9W7naalmk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzE0LzMwLzI0Lzg2/LzM2MF9GXzE0MzAy/NDg2MDNfN2Y5R0dI/dDNwd0luSXV6WTBK/QzlVMnowc0JDRzA2/a1EuanBn" alt="Environmental Conservation">
+        <h2>Environmental Conservation</h2>
+        <p>Contribute to preserving our planet for future gene...</p>
+      </div>
+    </div>
+  </div>
+  <div class="Header2">
+    <br><br>
+      <h1 style="color: white;">Volunteer Oppertunities</h1>
+      <br><br><br><br>
+  </div>
+
+  <div>
+  <div class="activities-container">
+      <!-- Activity 1 -->
+      <div class="activity">
+        <img src="https://imgs.search.brave.com/qsxcwcu_XKg8BCfmwx_5FMiA5EHiIwxP4okddVi-E3Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzE0LzE5LzAyLzk5/LzM2MF9GXzE0MTkw/Mjk5MTdfeTZOT1B2/clBWYUkzcHkzc0k5/NlBQREVaSWxBWGdY/d1MuanBn" alt="Activity 1">
+        <h3 style="color: white;">Activity 1</h3>
+        <p style="color: white;">location needed 1</p>
+      </div>
+
+      <!-- Activity 2 -->
+      <div class="activity">
+        <img src="https://imgs.search.brave.com/qsxcwcu_XKg8BCfmwx_5FMiA5EHiIwxP4okddVi-E3Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzE0LzE5LzAyLzk5/LzM2MF9GXzE0MTkw/Mjk5MTdfeTZOT1B2/clBWYUkzcHkzc0k5/NlBQREVaSWxBWGdY/d1MuanBn" alt="Activity 2">
+        <h3 style="color: white;">Activity 2</h3>
+        <p style="color: white;">location needed 2</p>
+      </div>
+
+      <!-- Activity 3 -->
+      <div class="activity">
+        <img src="https://imgs.search.brave.com/qsxcwcu_XKg8BCfmwx_5FMiA5EHiIwxP4okddVi-E3Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzE0LzE5LzAyLzk5/LzM2MF9GXzE0MTkw/Mjk5MTdfeTZOT1B2/clBWYUkzcHkzc0k5/NlBQREVaSWxBWGdY/d1MuanBn" alt="Activity 3">
+        <h3 style="color: white;">Activity 3</h3>
+        <p style="color: white;">location needed 1</p>
+      </div>
+
+      <!-- Activity 4 -->
+      <div class="activity">
+        <img src="https://imgs.search.brave.com/qsxcwcu_XKg8BCfmwx_5FMiA5EHiIwxP4okddVi-E3Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzE0LzE5LzAyLzk5/LzM2MF9GXzE0MTkw/Mjk5MTdfeTZOT1B2/clBWYUkzcHkzc0k5/NlBQREVaSWxBWGdY/d1MuanBn" alt="Activity 4">
+        <h3 style="color: white;">Activity 4</h3>
+        <p style="color: white;">location needed 1</p>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br>
+
+    </div>
+
+
+
+
+
+
 
 </body>
 </html>
