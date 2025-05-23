@@ -3,193 +3,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    .top-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: white;
-      padding: 10px 20px;
-    }
-
-    .logo {
-      font-size: 20px;
-      font-weight: bold;
-      color: #333;
-    }
-
-    .navbar {
-      display: flex;
-      background-color: white;
-      overflow: hidden;
-      border: none;
-    }
-
-    .navbar a {
-      flex: 1;
-      color: #333;
-      text-align: center;
-      padding: 10px 15px;
-      text-decoration: none;
-      transition: background-color 0.3s;
-    }
-
-    .navbar a:hover {
-      background-color: #f0f0f0;
-    }
-    .body{
-        text-align: center;
-        background-color: #8D99AE;
-        color: white;
-        border: 20px;
-        padding: 20px;
-    }
-    .map
-    {
-      flex: 1;
-      color: #333;
-      text-align: center;
-      padding: 10px 15px;
-      text-decoration: none;
-      transition: background-color 0.3s;
-      background-color: #e0e0e0;
-      margin-left: 5px;
-      border: none; 
-      outline: none; 
-      border-radius: 5px;
-      color-scheme: #0D3B66, #8D99AE;
-    }
-
-    .Bodytwo
-    {
-        text-align: center;
-    }
-      .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    p {
-      font-size: 16px;
-      color: #666;
-      margin-bottom: 40px;
-    }
-
-    .cards-container {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .card {
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      width: calc(33% - 20px);
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-
-    .card img {
-      width: 100%;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
-
-    .card h2 {
-      font-size: 20px;
-      margin: 0 0 10px;
-      color: #333;
-    }
-
-    .card p {
-      font-size: 12px;
-      color: #666;
-      line-height: 1.5;
-    }
-    .Header2{
-      text-align: center;
-      background-color: #8D99AE;
-      
-    }
-    .activities-container {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      background-color: #8D99AE;
-      padding-top: 20px;
-      
-    }
-
-    .activity {
-      text-align: center;
-    }
-
-    .activity img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 10px;
-      margin-left: 205px;
-      margin-right: 205px;
-    }
-
-    .activity h3 {
-      font-size: 18px;
-      margin: 0 0 5px;
-      color: #333;
-    }
-
-    .activity p {
-      font-size: 14px;
-      color: #666;
-    }
-  </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
   <div class="top-container">
-    <div class="logo"><h3>Illumination PH</h3></div>
+    <div class="logo"><h3 style="color: white;">Illumination PH</h3></div>
     <div class="navbar">
-      <a href="#Home">Home</a>
-      <a href="#Interactive Map">Interactive Map</a>
-      <a href="#Donate">Donate</a>
-      <a href="#Volunteer">Volunteer</a>
-      <a href="#Learn">Learn</a>
-      <a href="#Log In">Login</a>
-      <a href="#Abour us"> About us</a>
+      <a href="#Home" style="color: white;">Home</a>
+      <a href="#Interactive Map" style="color: white;">Interactive Map</a>
+      <a href="#Donate" style="color: white;">Donate</a>
+      <a href="#Volunteer" style="color: white;">Volunteer</a>
+      <a href="#Learn" style="color: white;">Learn</a>
+      <a href="#Log In" style="color: white;">Login</a>
+      <a href="#Abour us" style="color: white;"> About us</a>
+    </div>
+    
+  </div>
+    <div class="hero-section">
+    <img src="https://imgs.search.brave.com/VfnhjuQV-yTzDiaw7y_QG-eYvcQXji9BI5dSz-T_67c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vNTNQRzdi/cW53TDlhXzlzSFBQ/VnhJOFZRczJrLUJr/d0ZZS29Yem5jbDBY/Zy9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTlw/YldjdS9abkpsWlhC/cGF5NWpiMjB2L2NI/SmxiV2wxYlMxMlpX/TjAvYjNJdmFHbG5h/QzEyYjJ4MC9ZV2Rs/TFhSeVlXNXpiV2x6/L2MybHZiaTF6ZVhO/MFpXMXovTFdWc1pX/TjBjbWxqTFhCdi9i/R1V0Y0c5M1pYSXRi/R2x1L1pYTXRibVYw/ZDI5eWF5MXAvYm5S/bGNtTnZibTVsWTNS/bC9aRjg0TVRJeE9U/UXRNakV5L0xtcHda/ejl6WlcxMFBXRnAv/YzE5b2VXSnlhV1E" alt="Background Image" class="hero-background">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 style="color: white;">Join us in illuminating <br> communities without <br> electricity in the Philippines</h1>
+      <p style="font-size: 30px; color: white;" >Be part of the movement towards a brighter future.</p>
+      <button class="button"> <strong>Explore Map </strong></button>
     </div>
   </div>
-  <div class="Body">
-    <h1 style="color: white;">Join us in illuminating <br> communities without <br>
-         electricity in the Philippines</h1> <br>
-         <p style="color: white;">Be part of the movement towards a brighter future.</p> <br>
-         <a href="#interactive Map" class="map"> Explore Map</a>
-  </div>
+
   <br><br>
   <div class="Bodytwo">
-    <h1>
+    <h1 style="color: #112B3C;">
         Support Or Cause
     </h1>
     <p>Learn More About the Impact of Your Donation</p>
@@ -199,68 +42,107 @@
   </div>
     <div class="cards-container">
       <!-- Card 1 -->
-      <div class="card">
+      <div class="cardw">
         <img src="https://imgs.search.brave.com/fMnr7X32ZQQisd-Z7jsAv3rHsMvhMQp-Uj9W7naalmk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzE0LzMwLzI0Lzg2/LzM2MF9GXzE0MzAy/NDg2MDNfN2Y5R0dI/dDNwd0luSXV6WTBK/QzlVMnowc0JDRzA2/a1EuanBn" alt="Education Programs">
         <h2>Education Programs</h2>
         <p>Your donations help fund educational initiatives for...</p>
       </div>
 
       <!-- Card 2 -->
-      <div class="card">
+      <div class="cardw">
         <img src="https://imgs.search.brave.com/fMnr7X32ZQQisd-Z7jsAv3rHsMvhMQp-Uj9W7naalmk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzE0LzMwLzI0Lzg2/LzM2MF9GXzE0MzAy/NDg2MDNfN2Y5R0dI/dDNwd0luSXV6WTBK/QzlVMnowc0JDRzA2/a1EuanBn" alt="Community Development">
         <h2>Community Development</h2>
         <p>Support our efforts in building sustainable com...</p>
       </div>
 
       <!-- Card 3 -->
-      <div class="card">
+      <div class="cardw">
         <img src="https://imgs.search.brave.com/fMnr7X32ZQQisd-Z7jsAv3rHsMvhMQp-Uj9W7naalmk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzE0LzMwLzI0Lzg2/LzM2MF9GXzE0MzAy/NDg2MDNfN2Y5R0dI/dDNwd0luSXV6WTBK/QzlVMnowc0JDRzA2/a1EuanBn" alt="Environmental Conservation">
         <h2>Environmental Conservation</h2>
         <p>Contribute to preserving our planet for future gene...</p>
       </div>
     </div>
-  </div>
-  <div class="Header2">
     <br><br>
-      <h1 style="color: white;">Volunteer Oppertunities</h1>
-      <br><br><br>
   </div>
-
-  <div>
-  <div class="activities-container">
-      <!-- Activity 1 -->
-      <div class="activity">
-        <img src="https://imgs.search.brave.com/qsxcwcu_XKg8BCfmwx_5FMiA5EHiIwxP4okddVi-E3Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzE0LzE5LzAyLzk5/LzM2MF9GXzE0MTkw/Mjk5MTdfeTZOT1B2/clBWYUkzcHkzc0k5/NlBQREVaSWxBWGdY/d1MuanBn" alt="Activity 1">
-        <h3 style="color: white;">Activity 1</h3>
-        <p style="color: white;">location needed 1</p>
-      </div>
-
-      <!-- Activity 2 -->
-      <div class="activity">
-        <img src="https://imgs.search.brave.com/qsxcwcu_XKg8BCfmwx_5FMiA5EHiIwxP4okddVi-E3Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzE0LzE5LzAyLzk5/LzM2MF9GXzE0MTkw/Mjk5MTdfeTZOT1B2/clBWYUkzcHkzc0k5/NlBQREVaSWxBWGdY/d1MuanBn" alt="Activity 2">
-        <h3 style="color: white;">Activity 2</h3>
-        <p style="color: white;">location needed 2</p>
-      </div>
-
-      <!-- Activity 3 -->
-      <div class="activity">
-        <img src="https://imgs.search.brave.com/qsxcwcu_XKg8BCfmwx_5FMiA5EHiIwxP4okddVi-E3Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzE0LzE5LzAyLzk5/LzM2MF9GXzE0MTkw/Mjk5MTdfeTZOT1B2/clBWYUkzcHkzc0k5/NlBQREVaSWxBWGdY/d1MuanBn" alt="Activity 3">
-        <h3 style="color: white;">Activity 3</h3>
-        <p style="color: white;">location needed 1</p>
-      </div>
-
-      <!-- Activity 4 -->
-      <div class="activity">
-        <img src="https://imgs.search.brave.com/qsxcwcu_XKg8BCfmwx_5FMiA5EHiIwxP4okddVi-E3Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzE0LzE5LzAyLzk5/LzM2MF9GXzE0MTkw/Mjk5MTdfeTZOT1B2/clBWYUkzcHkzc0k5/NlBQREVaSWxBWGdY/d1MuanBn" alt="Activity 4">
-        <h3 style="color: white;">Activity 4</h3>
-        <p style="color: white;">location needed 1</p>
-        <br><br>
-      </div>
+    <div class="card-container">
+        <div class="card-wrapper">
+            <div class="card dark-blue">
+                <div class="icon">🤝</div>
+                <p class="activity-title">Activity 1</p>
+                <p class="location-needed">Location needed 1</p>
+                <p class="date">June 28</p>
+            </div>
+            <div class="card orange">
+                <div class="icon">🙌</div>
+                <p class="activity-title">Activity 2</p>
+                <p class="location-needed">Location needed 2</p>
+                <p class="date">June 28</p>
+            </div>
+            <div class="card dark-blue">
+                <div class="icon">🙌</div>
+                <p class="activity-title">Activity 2</p>
+                <p class="location-needed">Location needed 2</p>
+                <p class="date">June 28</p>
+            </div>
+        </div>
     </div>
-  </div>
+    
+
   <br><br><br><br><br>
+ <div class="about-us-container">
+        <div class="header">
+            <h1>About Us</h1>
+        </div>
 
+        <div class="content-row">
+            <div class="text-block">
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+            </div>
+            <div class="image-block">
+                <img src="https://imgs.search.brave.com/J3nPjnmRfH7bYGBw1XfdkOUuQWcBktEs5tNdg05YU7g/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vN21BaElY/UnJ1UElxaEhRNkpE/VjlmZ2R6d1EwblUy/c1NfSkxob292QVhm/ay9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTl0/WldScC9ZUzVuWlhS/MGVXbHRZV2RsL2N5/NWpiMjB2YVdRdk1U/UXgvTkRZeE9URXhO/Uzl3YUc5MC9ieTl6/YjJ4aGNpMXdZVzVs/L2JITXRiMjR0Y205/dlppMTAvYjNBdGQy/bDBhQzFpYkhWbC9M/WE5yZVMxaGJtUXRj/M1Z1L1ltVmhiWE11/YW5CblAzTTkvTmpF/eWVEWXhNaVozUFRB/bS9hejB5TUNaalBY/ZHZabmh2L2MzQkJk/R1Z1TjJVMFJtcEUv/UWkxbGJ6QlFXalpY/U1dkUi9VMGxQVUZw/TWRYWlNWemx3L1gw/azk" alt="House with solar panel">
+            </div>
+        </div>
+
+        <div class="content-row">
+            <div class="image-block">
+                <img src="https://imgs.search.brave.com/o9cYdE05NOoTbb2LdcXgF1f_YVPkQbdRshQ4dDsARgU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnNlYXJjaC5icmF2/ZS5jb20vMFBoVzBr/SGpqM0Naa3psdmRx/M1cwVDVjZDVWeVVU/UGVSVTZVbnQwSUJF/SS9yczpmaXQ6NTAw/OjA6MDowL2c6Y2Uv/YUhSMGNITTZMeTlw/YldjdS9abkpsWlhC/cGF5NWpiMjB2L1pu/SmxaUzF3YUc5MGJ5/OWkvWldGMWRHbG1k/V3d0YzJodi9kQzFp/WVc1aGRXVXRjbWxq/L1pTMTBaWEp5WVdO/bGN5MTMvYVhSb0xX/WnZjbVZ6ZEdWay9M/V2hwYkd3dGNHaHBi/R2x3L2NHbHVaWE5m/TVRneE5qSTAvTFRJ/ME5UQXVhbkJuUDNO/bC9iWFE5WVdselgy/aDVZbkpwL1pDWjNQ/VGMwTUE" alt="Rice terraces village">
+            </div>
+            <div class="text-block">
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+            </div>
+        </div>
     </div>
+</div>
+<br><br><br>
+ <section class="team-section">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <div class="placeholder-image"></div>
+                    <p class="member-name">Angelo Kacey Pineda</p>
+                    <p class="member-role">Project Manager</p>
+                </div>
+                <div class="team-member">
+                    <div class="placeholder-image"></div>
+                    <p class="member-name">Paulo Delas Armas</p>
+                    <p class="member-role">Developer</p>
+                </div>
+                <div class="team-member">
+                    <div class="placeholder-image"></div>
+                    <p class="member-name">Sherm James Caayon</p>
+                    <p class="member-role">Quality Analyst</p>
+                </div>
+                <div class="team-member">
+                    <div class="placeholder-image"></div>
+                    <p class="member-name">Joby Mae M. Miranda</p>
+                    <p class="member-role">Data Management Lead</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
