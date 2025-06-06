@@ -1,6 +1,6 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 .top-container {
@@ -12,9 +12,21 @@ body {
 }
 .logo {
     margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-image {
+    height: 40px;
+    width: auto;
 }
 .navbar {
     margin-right: 20px;
+}
+.logo-image {
+    height: 40px;
+    width: auto;
 }
 .hero-section {
     position: relative;
