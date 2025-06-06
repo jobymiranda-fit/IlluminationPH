@@ -3,217 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login - IllumiNation PH</title>
-  <style>
-    /* General Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    /* Header Section */
-    header {
-      background-color: #112B3C; /* Dark Blue */
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 20px;
-    }
-
-.header-logo {
-  height: 50px;
-  width: auto;
-  vertical-align: middle;
-  margin-right: 8px;
-  font-size: 25px;
-}
-
-    header nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      margin: 0;
-     font-weight: bold;
-      padding: 0;
-    }
-
-    header nav ul li a {
-      color: white;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    header nav ul li a:hover {
-      color: #d9d9d9;
-    }
-
-    /* Main Content */
-    main {
-      max-width: 500px;
-      margin: 50px auto;
-      padding: 30px;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .form-logo {
-      display: block;
-      margin: 0 auto 20px auto;
-      width: 100px;
-      height: auto;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 24px;
-      color: #112B3C;
-    }
-
-    p {
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 14px;
-      color: #555;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    label {
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    input[type="text"],
-    input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 14px;
-    }
-
-    .remember-forgot {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 14px;
-    }
-
-    .remember-forgot a {
-      color: #112B3C;
-      text-decoration: none;
-    }
-
-    .remember-forgot a:hover {
-      text-decoration: underline;
-    }
-
-    button {
-      background-color: #112B3C;
-      color: white;
-      border: none;
-      padding: 10px;
-      font-size: 16px;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #112B3C;
-    }
-
-  /* Footer Section */
-footer {
-  background-color: #ff6b00; /* Orange */
-  color: white;              /* Ensures all text inside footer is white */
-  text-align: center;
-  padding: 20px 10px;
-  font-size: 14px;
-  margin-top: 40px;
-}
-
-footer p {
-  margin: 5px 0;
-  color: white;              /* Explicitly set paragraph text to white */
-}
-
-footer a {
-  color: white;              /* Links are white */
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: #d9d9d9;            /* Light gray on hover */
-}
-  </style>
+  <title>Log In - IllumiNation PH</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="logo-container">
-  <img src="images/White Logo.png" alt="Logo" class="header-logo" class="logo-text"> <b>IllumiNation PH</b>
-</div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
+  <!-- Top Navigation -->
+  <div class="top-container">
+    <div class="logo">
+      <img src="https://i.ibb.co/9k9Crw9J/Logo-White.png?fbclid=IwY2xjawKvlBFleHRuA2FlbQIxMQABHnXBq_J6-BBcgM8nRG-cRB-PkE2YSEUi-8j8tnHU6qH0lzVSuAF85TCt_Qb8_aem_XTl7v_cQw_Fqbgv1CCtsPA" alt="Logo" />
+      <span class="logo-text">IllumiNation PH</span>
+    </div>
+    <div class="navbar">
+       <li><a href="#">Home</a></li>
         <li><a href="#">Interactive Map</a></li>
         <li><a href="#">Donate</a></li>
         <li><a href="#">Volunteer</a></li>
         <li><a href="#">Learn</a></li>
         <li><a href="#">Log In</a></li>
+    </div>
+  </div>
 
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Main Content -->
-  <main>
-    <!-- Optional Logo -->
-    <img src="images/Colored Logo.png" alt="Company Logo" class="form-logo">
-
-    <h2>Welcome to IllumiNation PH</h2>
-    <p>Enter your credentials to log in.</p>
-
-    <form action="#" method="POST">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" placeholder="Enter your username" required />
-
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" placeholder="Enter your password" required />
-
-      <div class="remember-forgot">
-        <label>
-          <input type="checkbox" name="remember"> Remember me
-        </label>
-        <a href="#">Forgot Password?</a>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <img src="https://i.ibb.co/svJ9Mq3g/power-line-2943982-1920.jpg?fbclid=IwY2xjawKvmahleHRuA2FlbQIxMQABHhNwkOQghQHBMONrQLjc5BRd3pyHBTlOYcWBX40EEcG0r9cpt1Gp4U04wJYI_aem_YHXPiWser4irAFugvrARwQ"  alt="Background Image" class="hero-background">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome Back!</h1>
+      <p>Log in to continue making positive changes.</p>
+      <div class="button-group">
+        <button id="admin"><strong>Admin</strong></button>
+        <button id="user"><strong>User</strong></button>
       </div>
+    </div>
+  </section>
 
-      <button type="submit">Log In</button>
-    </form>
-  </main>
+  <!-- Login Form Section -->
+  <section class="Bodytwo">
+    <div class="signup-container">
+      <div class="signup-left">
+        <h2>Welcome to IllumiNation PH</h2>
+      </div>
+      <div class="signup-right">
+        <form action="#" method="POST" class="signup-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required />
+
+          <div class="remember-forgot">
+            <label>
+              <input type="checkbox" name="remember"> Remember me
+            </label>
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="signup-button">Log In</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
-
   <footer>
-    <p>&copy; 2025 IllumiNation PH. All rights reserved.</p>
-    <p>Contact Us: <a href="mailto:support@illuminatioph.com">support@illuminatioph.com</a></p>
+    <div class="container-FOOTER1">
+      <a href="#questionpage" class="Footertxt">
+        Frequently Asked Questions
+      </a>
+      <p>If you have some frequently asked questions, feel free to check out some commonly asked questions</p>
+    </div>
+    <div class="footer2">
+      © 2025 IllumiNation PH. All rights reserved.
+      &nbsp; &nbsp;Contact us: info@illuminatioph.com
+    </div>
   </footer>
 
 </body>
