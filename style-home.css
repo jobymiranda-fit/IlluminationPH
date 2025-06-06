@@ -4,72 +4,84 @@ body {
 }
 
 .top-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #205375;
-  padding: 1x 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #205375;
+    padding: 1px 5px;
 }
-.logo
-{
-  margin-left: 20px;
+.logo {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-.navbar
-{
-  margin-right: 20px;
+
+.logo-image {
+    height: 40px;
+    width: auto;
+}
+.navbar {
+    margin-right: 20px;
 }
 .hero-section {
-  position: relative;
-  width: 100%;
-  min-height: 250px;
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
 }
 
 .hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #112B3C; /* Base color */
-  opacity: 0.9; /* Adjust this to control blend intensity */
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: #112B3C;
+    opacity: 0.9;
+    z-index: 1;
 }
 
 .hero-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    z-index: 0;
 }
+
 .hero-content {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  color: white;
-  text-align: center;
-  padding: 0 20px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center;    /* Center horizontally */
+    height: 400px;
+    color: white;
+    text-align: center;
+    padding: 40px 20px 0 20px;
 }
 
 .hero-content h1 {
-  font-size: 60px;
-  margin-bottom: 20px;
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 .hero-content p {
-  font-size: 16px;
-  margin-bottom: 30px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
-
 .button {
-  padding: 20px 80px;
+  padding: 15px 70px;
   background-color: #F66B0E;
   color: white;
   border: none;
