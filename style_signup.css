@@ -132,9 +132,17 @@ body {
 }
 
 .logo {
-  font-size: 20px;
-  font-weight: bold;
-  color: #333;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white !important;
+}
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+  /* Remove filter to ensure image visibility */
 }
 
 .navbar {
