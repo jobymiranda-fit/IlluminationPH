@@ -1,0 +1,158 @@
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* --- Header/Navbar Styles (from your CSS) --- */
+        .top-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #112b3c;
+            padding: 1px 5px;
+        }
+
+        .logo {
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .logo-text {
+            color: white;
+            font-weight: normal;
+            font-size: 1.2rem;
+        }
+
+        .navbar {
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            height: 40px;
+        }
+
+        .navbar a {
+            color: white;
+            text-align: center;
+            padding: 5px 15px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: #f0f0f0;
+            color: #112b3c;
+        }
+        
+        /* --- FAQ Page Specific Styles --- */
+        .faq-hero {
+            background-color: #112B3C;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .faq-hero h1 {
+            font-size: 2.8em;
+            margin: 0 0 10px 0;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .faq-hero p {
+            font-size: 1.2em;
+            color: #bdc3c7;
+            margin: 0;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px 40px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 0;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #2c3e50;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: color 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            color: #F66B0E;
+        }
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 1.6em;
+            line-height: 1;
+            color: #F66B0E;
+            transition: transform 0.3s ease-out;
+        }
+        
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, padding-top 0.4s ease-out;
+            font-size: 1.05em;
+            line-height: 1.7;
+            color: #555;
+        }
+        
+        .faq-item.active .faq-answer {
+             padding-top: 25px;
+        }
+
+
+        /* --- Footer Styles (from your CSS) --- */
+        .container-FOOTER1 {
+            background-color: #205375;
+            padding: 20px;
+        }
+
+        .Footertxt {
+            color: white;
+            margin-left: 40px;
+            text-decoration: none;
+        }
+        
+        .container-FOOTER1 p {
+           color: white;
+        }
+
+        .footer2 {
+            color: white;
+            background-color: #F66B0E;
+            text-align: center;
+            padding: 10px;
+        }

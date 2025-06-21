@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="FAQ.css">
+</head>
+<body>
+    <body>
+    <header class="top-container">
+        <div class="logo">
+            <img src="https://i.ibb.co/9k9Crw9J/Logo-White.png" alt="Logo" />
+            <span class="logo-text">IllumiNation PH</span>
+        </div>
+        <nav class="navbar">
+            <a href="Draft_Home.html">Home</a>
+            <a href="interactiveMap.html">Interactive Map</a>
+            <a href="Donation.html">Donate</a>
+            <a href="Draft_Volunteer.html">Volunteer</a>
+            <a href="ReportElectAccess.html">Learn</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="faq-hero">
+            <h1>Frequently Asked Questions</h1>
+            <p>Your guide to understanding our mission and how you can help.</p>
+        </section>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">What is the main goal of IllumiNation PH?</div>
+                <div class="faq-answer">
+                    <p>IllumiNation PH is an organization committed to bringing light and electricity to underserved communities across the Philippines. Our ultimate goal is to empower these communities, fostering better educational opportunities, sustainable community development, and environmental conservation through clean energy.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How can I help or get involved?</div>
+                <div class="faq-answer">
+                    <p>There are several impactful ways to get involved! You can make a financial contribution on our 'Donate' page or sign up for hands-on work through our 'Volunteer' page. Simply spreading the word about our cause also makes a huge difference.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Where does my donation go?</div>
+                <div class="faq-answer">
+                    <p>100% of your donation goes directly toward our core programs. This includes funding educational initiatives, supporting the development of sustainable communities, and aiding our environmental conservation efforts in the areas we serve.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What is the purpose of the Interactive Map?</div>
+                <div class="faq-answer">
+                    <p>The 'Interactive Map' is a feature on our website that visually showcases our impact. It allows you to explore the locations of our current and completed projects, see which communities we are actively supporting, and find information about upcoming events and activities.</p>
+                </div>
+            </div>
+            
+             <div class="faq-item">
+                <div class="faq-question">Are there specific upcoming activities I can join?</div>
+                <div class="faq-answer">
+                    <p>Yes! We have several activities planned. On our homepage, you can see cards for upcoming events, including their date and location. For more details on how to join, please visit the 'Volunteer' section of our website.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Who are the people behind this organization?</div>
+                <div class="faq-answer">
+                    <p>Our organization is driven by a dedicated group of professionals, including a Project Manager, Developer, Quality Analyst, and a Data Management Lead. You can learn more about the passionate individuals on our team in the "Meet Our Team" section on the homepage.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-FOOTER1">
+            <a href="#" class="Footertxt"><h1><strong>Frequently Asked Questions</strong></h1></a>
+            <p class="Footertxt">If you have some frequently asked questions, feel free to check out some commonly asked questions.</p>
+        </div>
+        <div class="footer2">
+            © 2025 IllumiNation PH. All rights reserved.
+            &nbsp; &nbsp;Contact us: info@illuminatioph.com
+        </div>
+    </footer>
+    
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+     
+                if (isActive) {
+                    item.classList.remove('active');
+                    answer.style.maxHeight = '0px';
+                } else {
+                    item.classList.add('active');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+</body>
+</html>
