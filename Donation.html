@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donation Page - IllumiNation PH</title>
+  <link rel="stylesheet" href="DonationDesign.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="top-container">
+    <div class="logo">
+      <img src="https://i.ibb.co/9k9Crw9J/Logo-White.png" alt="IllumiNation PH Logo" />
+      <span class="logo-text">IllumiNation PH</span>
+    </div>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#map">Interactive Map</a>
+      <a href="#donate">Donate</a>
+      <a href="#volunteer">Volunteer</a>
+      <a href="#learn">Learn</a>
+      <a href="#login">Login</a>
+    </nav>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <h1>Monetary Donation</h1>
+      <p>Thank you for your willingness to contribute! Every peso helps bring light to a community in need.</p>
+      <button class="hero-btn">Support Our Cause</button>
+    </section>
+
+    <!-- Donation Form -->
+    <section id="donationFormSection" class="donation-form">
+      <div class="form-box">
+        <div id="errorMessage" class="error-message hidden"></div>
+        <h2>Make a Donation</h2>
+        <p>Choose an amount and payment method to support our cause.</p>
+        
+        <label for="donationAmountInput">Enter Donation Amount</label>
+        <input type="number" id="donationAmountInput" placeholder="₱0.00" min="1" />
+        
+        <label for="paymentMethodSelect">Select Payment Method</label>
+        <select id="paymentMethodSelect">
+          <option value="" disabled selected>-- Select a payment method --</option>
+          <option value="credit">Credit Card</option>
+          <option value="debit">Debit Card</option>
+          <option value="gcash">GCash</option>
+          <option value="paymaya">PayMaya</option>
+        </select>
+        
+        <button id="confirmButton" class="confirm">Confirm Donation</button>
+      </div>
+    </section>
+
+    <!-- Donation Summary (Initially Hidden) -->
+    <section id="donationSummarySection" class="donation-summary hidden">
+      <div class="summary-right">
+        <h3>Donation Details Summary</h3>
+        <p>Please review your donation details below before proceeding.</p>
+      </div>
+      <div class="summary-left">
+        <div class="summary-item">
+          <strong>Donation Amount</strong>
+          <span id="summaryAmount">₱0.00</span>
+        </div>
+        <div class="summary-item">
+          <strong>Payment Method</strong>
+          <span id="summaryMethod">N/A</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donor Information (Initially Hidden) -->
+    <section id="donorInfoSection" class="donor-info hidden">
+      <h2>Provide Your Information</h2>
+      <div class="form-row">
+        <input type="text" id="donorNameInput" placeholder="Enter your full name" />
+        <input type="email" id="donorEmailInput" placeholder="Enter your email" />
+      </div>
+      <input type="text" placeholder="Optional message to our team" />
+      <button id="nextButton" class="btn">Next</button>
+    </section>
+
+    <!-- Payment Details (Initially Hidden) -->
+    <section id="paymentDetailsSection" class="payment-details hidden">
+      <h2>Payment Details</h2>
+      <div id="paymentFieldsContainer">
+        <!-- Credit/Debit Card Fields -->
+        <div id="creditCardFields" class="hidden">
+          <p>Please enter your card details.</p>
+          <div class="form-row">
+            <input type="text" placeholder="Card Number (e.g., 1234 5678 9123 0000)" />
+            <input type="text" placeholder="CVV (e.g., 123)" />
+          </div>
+          <input type="text" placeholder="Expiry Date (MM/YYYY)" />
+        </div>
+        <!-- GCash Fields -->
+        <div id="gcashFields" class="hidden">
+           <p>Please enter your GCash number to complete the payment.</p>
+           <input type="tel" placeholder="GCash Mobile Number (e.g., 09171234567)" />
+        </div>
+        <!-- PayMaya Fields -->
+        <div id="paymayaFields" class="hidden">
+           <p>Please enter your PayMaya number to complete the payment.</p>
+           <input type="tel" placeholder="PayMaya Mobile Number (e.g., 09981234567)" />
+        </div>
+      </div>
+      <button id="donateNowButton" class="btn">Donate Now</button>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonialsSection" class="testimonials">
+      <h2>Donor Testimonials</h2>
+      <p>See what our generous donors have to say.</p>
+      <div class="testimonial-cards">
+        <div class="card">
+          <p><strong>Sarah M.</strong> ⭐⭐⭐⭐⭐</p>
+          <p>I feel empowered knowing my donation directly contributes to lighting up homes. The transparency of IllumiNation PH is commendable!</p>
+        </div>
+        <div class="card">
+          <p><strong>Jake H.</strong> ⭐⭐⭐⭐⭐</p>
+          <p>A wonderful cause and a great team behind it. It's amazing to see the real-world impact these projects have on communities.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+        <div class="container">
+            <h3><a href="#faq">Frequently Asked Questions</a></h3>
+            <p>If you have any questions, feel free to check out our FAQ page or contact us directly.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2025 IllumiNation PH. All rights reserved. Contact us: info@illuminatioph.com</div>
+  </footer>
+
+  <!-- Success Message -->
+  <section id="successMessageSection" class="success-overlay hidden">
+    <div class="success-box">
+      <div class="success-icon">&#10004;</div>
+      <h2>Thank You!</h2>
+      <p>Your generous donation has been successfully processed.</p>
+      <div id="successSummary">
+          <!-- Donation details will be injected here by JS -->
+      </div>
+      <button id="resetDonationButton" class="btn">Make Another Donation</button>
+    </div>
+  </section>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="container">
+            <h3><a href="#faq">Frequently Asked Questions</a></h3>
+            <p>If you have any questions, feel free to check out our FAQ page or contact us directly.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2025 IllumiNation PH. All rights reserved. Contact us: info@illuminatioph.com</div>
+  </footer>
+
+<script>
+    // --- DOM Element References ---
+    const mainSections = {
+        form: document.getElementById('donationFormSection'),
+        summary: document.getElementById('donationSummarySection'),
+        donorInfo: document.getElementById('donorInfoSection'),
+        payment: document.getElementById('paymentDetailsSection'),
+        testimonials: document.getElementById('testimonialsSection'),
+        success: document.getElementById('successMessageSection')
+    };
+
+    const inputs = {
+        amount: document.getElementById('donationAmountInput'),
+        method: document.getElementById('paymentMethodSelect'),
+        name: document.getElementById('donorNameInput'),
+        email: document.getElementById('donorEmailInput')
+    };
+
+    const buttons = {
+        confirm: document.getElementById('confirmButton'),
+        next: document.getElementById('nextButton'),
+        donate: document.getElementById('donateNowButton'),
+        reset: document.getElementById('resetDonationButton')
+    };
+
+    const summarySpans = {
+        amount: document.getElementById('summaryAmount'),
+        method: document.getElementById('summaryMethod')
+    };
+    
+    const paymentFields = {
+        credit: document.getElementById('creditCardFields'),
+        gcash: document.getElementById('gcashFields'),
+        paymaya: document.getElementById('paymayaFields')
+    };
+
+    const errorMessageDiv = document.getElementById('errorMessage');
+    const successSummaryDiv = document.getElementById('successSummary');
+
+    // --- Utility Functions ---
+    function showMessage(message) {
+        errorMessageDiv.textContent = message;
+        errorMessageDiv.classList.remove('hidden');
+    }
+
+    function hideMessage() {
+        errorMessageDiv.classList.add('hidden');
+    }
+
+    function updatePaymentFields(method) {
+        Object.values(paymentFields).forEach(field => field.classList.add('hidden'));
+        switch (method) {
+            case 'credit':
+            case 'debit':
+                paymentFields.credit.classList.remove('hidden');
+                break;
+            case 'gcash':
+                paymentFields.gcash.classList.remove('hidden');
+                break;
+            case 'paymaya':
+                paymentFields.paymaya.classList.remove('hidden');
+                break;
+        }
+    }
+
+    // --- Event Listeners ---
+    buttons.confirm.addEventListener('click', () => {
+        hideMessage();
+        const amount = parseFloat(inputs.amount.value);
+        const method = inputs.method.value;
+        const methodName = inputs.method.options[inputs.method.selectedIndex].text;
+
+        if (isNaN(amount) || amount <= 0) {
+            showMessage('Please enter a valid donation amount.');
+            return;
+        }
+        if (!method) {
+            showMessage('Please select a payment method.');
+            return;
+        }
+
+        summarySpans.amount.textContent = `₱${amount.toFixed(2)}`;
+        summarySpans.method.textContent = methodName;
+        
+        updatePaymentFields(method);
+
+        mainSections.summary.classList.remove('hidden');
+        mainSections.donorInfo.classList.remove('hidden');
+        
+        mainSections.summary.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    buttons.next.addEventListener('click', () => {
+        mainSections.payment.classList.remove('hidden');
+        mainSections.payment.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+
+    buttons.donate.addEventListener('click', () => {
+        const name = inputs.name.value.trim();
+        const email = inputs.email.value.trim();
+        
+        if (!name || !email) {
+            // A more elegant message could be placed in the donor info section
+            alert('Please provide your name and email.');
+            return;
+        }
+
+        // --- Hide all main content ---
+        Object.values(mainSections).forEach(section => section.classList.add('hidden'));
+        
+        // --- Show success message ---
+        mainSections.success.classList.remove('hidden');
+
+        // --- Populate success summary ---
+        successSummaryDiv.innerHTML = `
+            <p><strong>Donor:</strong> ${name}</p>
+            <p><strong>Amount:</strong> ${summarySpans.amount.textContent}</p>
+            <p><strong>Method:</strong> ${summarySpans.method.textContent}</p>
+            <p>A confirmation has been sent to ${email}.</p>
+        `;
+    });
+
+    buttons.reset.addEventListener('click', () => {
+        // --- Hide success message ---
+        mainSections.success.classList.add('hidden');
+
+        // --- Reset form fields ---
+        inputs.amount.value = '';
+        inputs.method.value = '';
+        inputs.name.value = '';
+        inputs.email.value = '';
+
+        // --- Hide dynamic sections ---
+        mainSections.summary.classList.add('hidden');
+        mainSections.donorInfo.classList.add('hidden');
+        mainSections.payment.classList.add('hidden');
+        hideMessage();
+
+        // --- Show initial sections ---
+        mainSections.form.classList.remove('hidden');
+        mainSections.testimonials.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+  </script>
+</html>
